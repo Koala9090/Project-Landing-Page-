@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html, body {
+    overflow-x: hidden;
+}
 body{
    
     flex-direction: column;
@@ -14,6 +17,7 @@ body{
 header{
     background-color: #1f2037;
     padding: 20px;
+    width: 100vw;
 }
 .header{
     display: flex;
@@ -22,9 +26,6 @@ header{
     max-width: 1000px;
     margin: auto;
     padding: 10px;
-}
-.info{
-
 }
 .info h1{
     font-size: 48px;
@@ -72,6 +73,7 @@ nav{
     border-radius: 10px;
     display:block;
     margin: 30px;
+    object-fit: cover; 
 }
 .inner-content{
     display: flex;
@@ -93,6 +95,7 @@ nav{
     font-size: 36px;
     color: #1f2037;
     font-weight: 900;
+    margin-bottom: 25px;
 }
 .container{
     display: flex;
@@ -108,13 +111,18 @@ nav{
 }
 .boxes{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center;
     gap: 52px;
 }
-img{
-    width: 100px;
-    height: 100px;
+.boxe img{
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    border:solid 4px #3882f6;
+}
+.text{
+    text-align: center;
 }
 .quote {
     display: flex;
@@ -124,6 +132,7 @@ img{
     background-color: #E5E7EB;
     padding: 100px;
     position: relative; 
+    font-family: Robot;
 }
 blockquote {
     font-size: 36px;
@@ -141,4 +150,47 @@ blockquote {
     max-width: 800px; 
     display: flex;
     justify-content: flex-end; 
+}
+
+.cta{
+    background-color: #3882f6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px 20%;
+    padding: 40px 40px;
+    border-radius: 8px;
+}
+.call-to-action p,
+.call-to-action h3{
+    color: white;
+    margin: 0;
+    margin-left: 40px;
+}
+.call-to-action button{
+    background-color: #3882f6;
+    border: solid 2px white;
+    border-radius: 5px;
+    padding: 8px 28px;
+    cursor: pointer;
+    color: white;
+    margin-right: 40px;
+}
+.call-to-action{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.call-to-action div {
+    display: flex;
+    flex-direction: column; 
+    gap: 5px; 
+}
+.footer{
+    background-color: #1f2037;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    width: 100vw;
 }
