@@ -8,7 +8,7 @@ body{
    
     flex-direction: column;
     align-items: center;
-    background-color: #1f2037;
+    /* background-color: #1f2037; */
     font-family: 'Roboto', sans-serif;
 }
 header{
@@ -23,7 +23,9 @@ header{
     margin: auto;
     padding: 10px;
 }
+.info{
 
+}
 .info h1{
     font-size: 48px;
     color: #F9FAF8;
@@ -62,16 +64,81 @@ nav{
     display: flex;
     flex-shrink: 0;
     text-align: center;
+    margin-top: 12px;
 }
 .hero-image img{
     width: 400px;
+    height: 200px; 
     border-radius: 10px;
+    display:block;
+    margin: 30px;
+}
+.inner-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    width: 100%;
 }
 .content{
+    background-color: #1f2037;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 50px;
+    width: 100vw;
+}
+.container h2{
+    font-size: 36px;
+    color: #1f2037;
+    font-weight: 900;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    text-align: center;
     max-width: 1000px;
     margin: auto;
+    padding:30px 0;
+    width: 100vw;
+}
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 52px;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+.quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    background-color: #E5E7EB;
+    padding: 100px;
+    position: relative; 
+}
+blockquote {
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2037;
+    text-align: center;
+    max-width: 800px;
+}
+
+.quote p {
+    font-weight: 500;
+    font-size: 26px;
+    text-align: right;
+    width: 100%;
+    max-width: 800px; 
+    display: flex;
+    justify-content: flex-end; 
 }
